@@ -1,6 +1,7 @@
 # you can copy/paste and run all this text. Theses steps are idempotence.
-apt update && apt -y upgrade && apt -y autoremove #to avoid troubles
-apt remove -y python3 ansible ansible-core #to avoid troubles
+apt update && apt -y upgrade && apt -y autoremove
+# THIS WILL REMOVE YOUR PYTHON3, Ansible and Asible core (to avoid troubles)
+apt remove -y python3 ansible ansible-core 
 apt install python3-pip
 pip install --upgrade pip
 pip install ansible ansible-core
