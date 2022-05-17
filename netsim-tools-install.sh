@@ -1,4 +1,4 @@
-# you can copy/paste and run all this text. Theses steps are idempotence.
+# you can copy/paste and run all this text.
 apt update && apt -y upgrade && apt -y autoremove
 # THIS WILL REMOVE YOUR PYTHON3, Ansible and Asible core (to avoid troubles with others versions)
 apt remove -y python3 ansible ansible-core 
