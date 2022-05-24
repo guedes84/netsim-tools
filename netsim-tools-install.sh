@@ -40,7 +40,7 @@ cat > netsim-install.pb << EOF
 
     - name: "[ ADJUSTING TIME TO AVOID ISSUES ]"
       shell:
-        cmd: "timedatectl set-timezone America/Sao_Paulo && timedatectl --adjust-system-clock"
+        cmd: "timedatectl set-timezone $(cat /etc/timezone) && timedatectl --adjust-system-clock"
 
     - name: "[ TESTING KVM LIBVIRT SUPPORT ]"
       shell:
